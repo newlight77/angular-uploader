@@ -15,6 +15,14 @@ This is an example based on a file-uploader to show how to integrate frontend an
 ```sh
 git clone https://github.com/newlight77/kata-node-angular-uploader.git
 
+make compile up
+```
+
+or 
+```sh
+cd frontnd && npm instaall && npm run build-prod && cd -
+cd backend && npm instaall && cd -
+
 docker-compose up -d
 ```
 
