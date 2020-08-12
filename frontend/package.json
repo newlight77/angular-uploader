@@ -1,6 +1,7 @@
 {
-  "name": "angular-uploader",
+  "name": "kata-angular-uploader",
   "version": "0.0.0",
+  "license": "Apache License Version 2.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
