@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DemoMaterialModule } from './material.module';
+import { UploadModule } from './upload/upload.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { DemoMaterialModule } from './material.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DemoMaterialModule
+    DemoMaterialModule,
+    UploadModule
   ],
   providers: [],
   bootstrap: [AppComponent]
