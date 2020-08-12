@@ -2,21 +2,23 @@ version: "3.6"
 services:
   backend:
     image: node:latest
-    container_name: server
+    container_name: backend
     ports:
       - "3000:3000"
     volumes:
       - ./backend:/code
+      - ./uploads:/data/uploads
     working_dir: /code
     command: >
       sh -c "node server.js"
   frontend:
     image: nginx:latest
-    container_name: nginx
+    container_name: frontend
     ports:
       - "80:80"
       - "443:443"
     volumes:
+      - ./nginx/env.docker.js:/var/www/nginx-default/env.js
       - ./frontend/dist/kata-angular-uploader:/var/www/nginx-default
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./nginx/nginx.mime.types:/etc/nginx/conf/mime.types

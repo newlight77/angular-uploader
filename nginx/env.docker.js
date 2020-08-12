@@ -2,6 +2,6 @@
   window.__env = window.__env || {};
 
   window.__env = {
-    apiUrl: "http://localhost:3000/api",
+    apiUrl: "http://backend/api/",
   };
 })(this);

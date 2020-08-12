@@ -11,7 +11,7 @@ var corsOptions = {
 
 server.use(cors(corsOptions));
 
-server.post('/upload', upload);
+server.post('/api/v1/upload', upload);
 
 server.listen(3000, () => {
   console.log('Server started!');

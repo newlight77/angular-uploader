@@ -8,7 +8,7 @@ import {
 import { Subject, Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
 
-const apiUrl = `${environment.env.apiUrl}/upload`;
+const apiUrl = `${environment.env.apiUrl}/api/v1/upload`;
 
 @Injectable()
 export class UploadService {
